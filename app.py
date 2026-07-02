@@ -17,7 +17,7 @@ def normalizar_nome(texto):
 
 def identificar_turno(escala):
     escala_str = str(escala).strip()
-    if not scala_str or pd.isna(escala): return "NÃO IDENTIFICADO"
+    if not escala_str or pd.isna(escala): return "NÃO IDENTIFICADO"
     horarios = re.findall(r'\b\d{2}:\d{2}\b', escala_str)
     if not horarios: return "NÃO IDENTIFICADO"
     entrada = horarios[0]
